@@ -10,4 +10,4 @@ COPY . .
 
 RUN ncc build src/action.ts -o dist
 
-CMD ["node", "dist/index.js"]
+CMD ["node", "./dist/index.js"]
