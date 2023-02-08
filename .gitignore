@@ -3,14 +3,14 @@ node_modules
 
 # Build artifacts
 build/*
-!build/package.json
 
 # Packaged build output
 dist/*
-!dist/package.json
 
 # Environment files
 .env.cjs
 
 # jest
 coverage
+
+.idea

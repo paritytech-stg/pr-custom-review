@@ -1,24 +1,20 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "target": "ES2021", // Node.js LTS 16
-    "lib": ["ES2021"], // Node.js LTS 16
+    "rootDir": "./src",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "node",
+    "module": "NodeNext",
     "sourceMap": false,
     "declaration": false,
-    "module": "commonjs",
-    "outDir": "build/prcr",
     "strict": true,
     "esModuleInterop": true,
-    "types": ["node", "jest"],
     "useUnknownInCatchVariables": false,
-    "typeRoots": ["./node_modules/@types", "./src/@types"]
+    "outDir": "dist",
+    "paths": {
+      "src/*": ["./src/*"]
+    }
   },
-  "ts-node": {
-    "compilerOptions": {
-      "moduleResolution": "node",
-      "module": "esnext"
-    },
-    "files": true // This makes ts-node able to find src/@types
-  },
-  "include": ["src", "test"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }

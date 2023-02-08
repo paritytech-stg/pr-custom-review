@@ -31,9 +31,9 @@
     "fastify": "^3.29.4",
     "iterative-permutation": "^1.0.0",
     "joi": "^17.6.0",
-    "node-fetch": "^3.2.10",
-    "ts-node": "^10.7.0",
-    "yaml": "^2.0.0"
+    "node-fetch": "^3.3.0",
+    "ts-node": "^10.9.1",
+    "yaml": "^2.2.1"
   },
   "devDependencies": {
     "@resolritter/tsc-files": "^1.1.4",
@@ -48,6 +48,6 @@
     "opstooling-js-style": "https://github.com/paritytech/opstooling-js-style#c298d0f732d93712e4397fd53baa3317a3022c8c",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.4",
-    "typescript": "^4.6.3"
+    "typescript": "^4.9.5"
   }
 }
