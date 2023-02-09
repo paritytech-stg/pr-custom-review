@@ -9,6 +9,9 @@ inputs:
     description: 'The token to be used for making requests such as requesting reviews'
   checks-reviews-api:
     description: 'The API to be used for processing the reviews. This input is only considered if "token" is not given.'
+  GITHUB_TOKEN:
+    required: true
+    type: string
 runs:
   using: docker
   image: 'Dockerfile'
