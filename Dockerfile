@@ -1,5 +1,7 @@
 FROM node:18
 
+WORKDIR /action
+
 RUN npm install -g @vercel/ncc
 
 COPY package.json yarn.lock ./
@@ -10,4 +12,4 @@ COPY . .
 
 RUN ncc build src/action.ts -o dist
 
-CMD ["node", "./dist/index.js"]
+CMD ["node", "/action/dist/index.js"]
