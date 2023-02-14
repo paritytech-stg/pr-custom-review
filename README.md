@@ -1,6 +1,6 @@
 # PR Custom Review
 
-TEST
+TEST!
 
 pr-custom-review is a GitHub Action for complex pull request approval scenarios
 which are not currently supported by GitHub's
